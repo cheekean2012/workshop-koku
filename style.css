@@ -153,6 +153,7 @@
   height: 100%;
 }
 
+/* Contact container */
 .contact-container {
   position: relative;
   background: rgba(0, 0, 0, 0.9);
@@ -163,6 +164,7 @@
   text-align: center;
 }
 
+/* Form container in contact container */
 .form-container {
   max-width: 300px;
   position: absolute;
@@ -171,6 +173,7 @@
   transform: translate(-50%, -50%);
 }
 
+/* Input form design */
 .input-form {
   display: block;
   margin: 24px auto;
@@ -182,6 +185,7 @@
   transition: all 0.3s ease;
 }
 
+/* Input button design */
 .input-button {
   border: 2px solid rgb(128, 113, 113);
   border-radius: 20px;
@@ -190,6 +194,7 @@
   cursor: pointer;
 }
 
+/* Mouse move to button effect */
 .input-button:hover {
   background: rgba(102, 102, 102, 0.795);
   transition: 0.5s;
