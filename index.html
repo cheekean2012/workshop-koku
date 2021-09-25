@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My portfolio</title>
+  </head>
+  <body>
+    <!---Full width background image with description--->
+    <section class="background-image" id="home">
+      <!---Header navigation bar--->
+      <div class="navigation-bar">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq5I-ZyCxGGkK-6tWMu3uJOCXzus9hYXvow&usqp=CAU"
+          alt="logo"
+          class="logo" />
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="title-description">
+        <h2>Welcome to my portfolio</h2>
+        <br />
+        <p>I'm programmer. I've no life</p>
+      </div>
+    </section>
+
+    <!---About--->
+    <section class="about-container" id="about">
+      <div class="about-card">
+        <img
+          src="https://us.123rf.com/450wm/tvectoricons/tvectoricons1811/tvectoricons181105507/112233704-programmer-icon-trendy-flat-vector-programmer-icon-on-white-background-from-professions-collection-v.jpg?ver=6"
+          alt="personal photo" />
+
+        <div class="about-description">
+          <h3>About Me</h3>
+          <p>
+            Hello, I'm newbie programmer. A web designer and front-end developer
+            from SEGi College Penang. I create a workshop website for fun and
+            teach for those keen to learn create website. You can check my
+            product in the below of the gallery photo
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---Gallery--->
+    <section class="gallery-container" id="gallery">
+      <h2>My Gallery</h2>
+      <div class="flexbox-container">
+        <div class="flexbox-item">
+          <img
+            src="https://miro.medium.com/max/3200/1*5IYtIe5OwxeoYXi226J-Uw.jpeg"
+            alt="web design" />
+
+          <div class="flexbox-item-back">
+            <p>Web Design</p>
+          </div>
+        </div>
+
+        <div class="flexbox-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWd5Z-gfWBKp6as2EtSQDjP6ktomKSi_Phvw&usqp=CAU"
+            alt="mobile app" />
+
+          <div class="flexbox-item-back">
+            <p>Mobile App Design</p>
+          </div>
+        </div>
+
+        <div class="flexbox-item">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="data analysis" />
+
+          <div class="flexbox-item-back">
+            <p>Data Analysis</p>
+          </div>
+        </div>
+
+        <div class="flexbox-item">
+          <img
+            src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f67d6b8af733458404e97bf%2FThe-4-Top-Artificial-Intelligence-Trends-For-2021%2F960x0.jpg%3Ffit%3Dscale"
+            alt="artificial intelligence" />
+
+          <div class="flexbox-item-back">
+            <p>Artificial Intelligence</p>
+          </div>
+        </div>
+
+        <div class="flexbox-item">
+          <img
+            src="https://cdn-clfjn.nitrocdn.com/BOVKMJlXuKUTaPhGtzOSLaYACqQnOxuY/assets/static/optimized/rev-36a61e3/wp-content/uploads/elementor/thumbs/Blockchain-pa1pm9yg5hz54nzla8l7wf3ijibmvv7432hgbn9z7s.jpg"
+            alt="block chain" />
+
+          <div class="flexbox-item-back">
+            <p>Block Chain</p>
+          </div>
+        </div>
+
+        <div class="flexbox-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5q6cL3RoWAC5n6xVkGbTsaFNGoWXBH9ajfw&usqp=CAU"
+            alt="neuralink" />
+
+          <div class="flexbox-item-back">
+            <p>Neuralink</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-container" id="contact">
+        
+        <form class="form-container">
+            <h2>Contact Me</h2>
+            <input class="input-form" type="text" placeholder="Name">
+            <input class="input-form" type="email" placeholder="Email">
+            <input class="input-form" type="text" placeholder="Phone Number">
+            <textarea class="input-form" name="message" cols="30" rows="10" placeholder="Reply Message" ></textarea>
+            <input class="input-form input-button" type="button" value="Submit">
+        </form>
+    </section>
+  </body>
+</html>

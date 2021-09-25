@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  font-family: "Lucida Sans";
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Background image setting*/
+.background-image {
+  top: 0;
+  background: url("https://wallpaper.dog/large/5558019.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+/* Navigation bar */
+.navigation-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  padding: 12px 0;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+}
+
+/* Logo design */
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: 16px;
+}
+
+/* Navigation list item */
+.nav-links li {
+  margin-right: 16px;
+  list-style: none;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+/* Navigation text design */
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mouse point to text effect */
+.nav-links li a:hover {
+  transition: 0.5s;
+  color: orange;
+}
+
+/* Text setting in the background image */
+.title-description {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+/* About me container */
+.about-container {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+}
+
+/* The about card in about container */
+.about-card {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* The image design in the container */
+.about-card img {
+  width: 350px;
+  height: 350px;
+  padding: 16px;
+  border-right: 1px solid #bbb;
+  margin: auto 48px auto 0;
+}
+
+/* The description design in the container */
+.about-card {
+  margin: auto;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.about-description {
+  margin: auto;
+}
+
+/* The description of paragraph design in the container */
+.about-card p {
+  margin-top: 16px;
+  margin-right: 48px;
+}
+
+/* Gallery container */
+.gallery-container {
+  height: 100%;
+  padding-top: 96px;
+  padding-bottom: 48px;
+}
+
+.gallery-container h2 {
+  text-align: center;
+}
+
+/* Flexbox container in gallery container */
+.flexbox-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* flexbox item design */
+.flexbox-item {
+  width: 320px;
+  height: 200px;
+  margin: 24px 16px;
+  position: relative;
+  box-shadow: 5px 4px 8px 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* The image in each flexbox item */
+.flexbox-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  margin: 48px auto;
+  width: 50%;
+  height: 80vh;
+  color: white;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-form {
+  display: block;
+  margin: 24px auto;
+  width: 100%;
+  padding: 8px;
+  border-bottom: 2px solid rgb(128, 113, 113);
+  color: white;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.input-button {
+  border: 2px solid rgb(128, 113, 113);
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.input-button:hover {
+  background: rgba(102, 102, 102, 0.795);
+  transition: 0.5s;
+}
+
+/* Extra bonus */
+/* Mouse move to flexbox item effect */
+.flexbox-item:hover {
+  transform: rotateY(180deg);
+  background-color: white;
+  cursor: pointer;
+}
+
+/* After mouse move to image will flip back to show description*/
+.flexbox-item-back {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  background-color: #303030;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+/* After flip back show description setting */
+.flexbox-item-back p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
