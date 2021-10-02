@@ -5,16 +5,20 @@
   scroll-behavior: smooth;
 }
 
+body{
+  height: 100vh;
+}
+
 /* Background image setting*/
 .background-image {
-  top: 0;
   background: url("https://wallpaper.dog/large/5558019.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   width: 100%;
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 
 /* Navigation bar */
@@ -71,8 +75,9 @@
 /* About me container */
 .about-container {
   width: 80%;
+  background: #fff;
   margin: auto;
-  height: 100vh;
+  height: 100%;
 }
 
 /* The about card in about container */
@@ -115,9 +120,8 @@
 
 /* Gallery container */
 .gallery-container {
-  height: 100%;
   padding-top: 96px;
-  padding-bottom: 48px;
+  padding-bottom: 40px;
 }
 
 .gallery-container h2 {
@@ -158,19 +162,21 @@
   position: relative;
   background: rgba(0, 0, 0, 0.9);
   margin: 48px auto;
-  width: 50%;
-  height: 80vh;
+  max-width: 50%;
+  width: 100%;
   color: white;
   text-align: center;
 }
 
 /* Form container in contact container */
 .form-container {
+  margin: 48px auto;
+  padding: 16px;
   max-width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.form-container h2 {
+  padding-top: 16px;
 }
 
 /* Input form design */
